@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Domain RAG Chatbot</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Domain RAG Chatbot</h1>
+      <span id="status" class="status">checking index…</span>
+    </header>
+    <main id="messages" class="messages"></main>
+    <form id="chat-form" class="composer">
+      <input id="chat-input" type="text" placeholder="Ask a question about your documents…" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="/chat.js"></script>
+</body>
+</html>
