@@ -170,11 +170,3 @@ lighter model instead of a `-latest` alias, disabling contextual retrieval
 for ingestion, lowering `MAX_TOOL_CALLS`, or upgrading to a paid tier. The
 retry logic backs off automatically on `429`/`503`, but it can't manufacture
 quota that isn't there.
-
-## Suggested next step: evaluation
-
-This build doesn't include an automated RAG evaluation harness (e.g.
-faithfulness/answer-relevance/context-precision scoring via a framework
-like RAGAS). For a production deployment, adding one is the natural next
-investment — it turns "does this feel better" into a measurable regression
-gate whenever you change chunking, retrieval, or prompts.
